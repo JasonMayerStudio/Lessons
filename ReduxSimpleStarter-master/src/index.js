@@ -9,14 +9,13 @@ import VideoDetail from './components/video_detail'
 const API_Key = 'AIzaSyCyIjJa6cM4vV_kqc2Cd0gOacY521nqhWI';
 
 
-
 class App extends Component {
    constructor(props){
        super(props);
 
        this.state = {
          videos: [],
-          selectedVideo: null
+         selectedVideo: null
        };
 
 
@@ -24,7 +23,6 @@ class App extends Component {
          this.setState({
          videos: videos,
          selectedVideo: videos[0]
-
          });
       });
 
@@ -35,8 +33,7 @@ class App extends Component {
        <div>
          <SearchBar />
          <VideoDetail video={this.state.selectedVideo} />
-         <VideoList onVideoSelect={selectedVideo => this.ssetState({selectedVideo})}
-
+         <VideoList onVideoSelect={selectedVideo => this.setState({selectedVideo})}
          videos={this.state.videos}/>
        </div>
    );
