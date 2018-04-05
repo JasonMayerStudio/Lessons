@@ -1,11 +1,12 @@
 
 .container {
-  background-color: #999;
+  background-color: #800000;
 }
 .search-bar {
+  padding: 20px 0px 0px 0px;
   margin: 20px;
-  width: 120px;
-  text-align: center;
+  width: 170px;
+  text-align: left;
 }
 
 .video-item img{
