@@ -1,0 +1,36 @@
+
+.container {
+  background-color: #999;
+}
+.search-bar {
+  margin: 20px;
+  width: 120px;
+  text-align: center;
+}
+
+.video-item img{
+  max-width: 64px;
+}
+
+.title-details{
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.video-detail .details {
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+
+}
+
+.list-group-item {
+   cursor: pointer;
+
+}
