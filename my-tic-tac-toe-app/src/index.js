@@ -10,6 +10,8 @@ function Square(props) {
   );
 }
 
+
+
 class Board extends React.Component {
   constructor(props) {
     super(props);
@@ -69,6 +71,8 @@ class Board extends React.Component {
   }
 }
 
+
+
 class Game extends React.Component {
   render() {
     return (
@@ -84,6 +88,7 @@ class Game extends React.Component {
     );
   }
 }
+
 
 function calculateWinner(squares) {
   const lines = [
@@ -104,6 +109,7 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
 
 // ========================================
 
