@@ -1,4 +1,5 @@
 //Create a new component. This component will get put in some html
+//Tutorial completed by Jason Mayer Studio from Udemy course on Redux
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
