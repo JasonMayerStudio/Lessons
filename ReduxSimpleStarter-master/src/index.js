@@ -1,5 +1,4 @@
-//Create a new component. This component will get put in some html
-//Tutorial completed by Jason Mayer Studio from Udemy course on Redux
+import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
@@ -35,9 +34,11 @@ class App extends Component {
    }
 
    render() {
+    const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 500);
+
      return (
        <div>
-         <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
+         <SearchBar onSearchTermChange={videoSearch} />
          <VideoDetail video={this.state.selectedVideo} />
          <VideoList onVideoSelect={selectedVideo => this.setState({selectedVideo})}
          videos={this.state.videos}/>
