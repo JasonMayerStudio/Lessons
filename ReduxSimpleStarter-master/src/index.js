@@ -17,7 +17,7 @@ class App extends Component {
          videos: [],
          selectedVideo: null
        };
-       this.videoSearch('DSK8R Skateboards')
+       this.videoSearch('')
      }
 
 
