@@ -19,7 +19,7 @@
   font-weight: bold;
 }
 
-.video-detail .details {
+.video-detail details {
   color: #fff;
   margin-top: 10px;
   padding: 10px;
