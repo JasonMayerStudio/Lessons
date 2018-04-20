@@ -1,1 +1,1 @@
-console.log('Hello World!(from webpack)')
+console.log('Dick Vs Pussy!(from webpack)');
