@@ -7,19 +7,21 @@ module.exports = {
      path: path.resolve(__dirname, './build'),
      filename: 'bundle.js'
    },
-   module:{
-     loaders:[
-       {
-         loader: 'bable-loader',
-         test: /\.js$/,
-         exclude: /node_modules/
-       }
-     ]
-   },
+   module: {
+        loaders: [
+            {
+                test: /\.jsx?$/,
+                exclude:/(node_modules|bower_components)/,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['es2015', 'react']
+                }
+            }
+        ]
+    },
    devServer: {
      port:8080,
      contentBase: './build',
      inline: true
    }
-
 }
