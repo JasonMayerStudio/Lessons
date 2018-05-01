@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "bable": {
+    "presets": [
+      "es2015"
+    ]
   },
   "keywords": [],
   "author": "",
