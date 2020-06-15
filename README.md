@@ -1,5 +1,5 @@
 # Lessons
 training exercises and such
 
-## Lesson 1 Simple Redux Work
+## Lesson 1 Redux
 https://github.com/JasonMayerStudio/Lessons/tree/master/ReduxSimpleStarter-master
